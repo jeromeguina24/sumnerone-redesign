@@ -583,6 +583,68 @@ main section{scroll-margin-top:90px}
   .pc-filter{flex:none}
 }
 
+/* ---------- Office copiers & all-in-ones page ---------- */
+.oc-view{padding-bottom:24px}
+.oc-sr{position:absolute;width:1px;height:1px;margin:-1px;padding:0;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0}
+.oc-hero{padding:64px 0 56px;max-width:980px}
+.oc-hero h1{font-size:clamp(42px,5.2vw,72px);color:var(--heading);max-width:22ch}
+.oc-view .oc-hero p.lead{max-width:72ch;margin-left:0;margin-right:0}
+.oc-hero .hero-ctas{justify-content:flex-start;align-items:center;gap:22px}
+.oc-marquee{background:var(--deep);overflow:hidden;padding:22px 0;-webkit-mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent);mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent)}
+.oc-marquee ul{list-style:none;margin:0;padding:0;display:flex;width:max-content;animation:oc-scroll 48s linear infinite}
+.oc-marquee:hover ul{animation-play-state:paused}
+.oc-marquee li{font-family:var(--ui);font-weight:700;font-size:22px;letter-spacing:.01em;color:#fff;white-space:nowrap;padding:0 44px;display:flex;align-items:center;gap:88px}
+.oc-marquee li::after{content:"";width:8px;height:8px;background:#00B3E0;border-radius:2px;margin-right:-48px}
+@keyframes oc-scroll{to{transform:translateX(-50%)}}
+@media (prefers-reduced-motion:reduce){.oc-marquee{-webkit-mask-image:none;mask-image:none}.oc-marquee ul{animation:none;width:auto;flex-wrap:wrap;justify-content:center;row-gap:10px}.oc-marquee li[aria-hidden]{display:none}}
+.oc-cats{scroll-margin-top:calc(90px + env(safe-area-inset-top,0px))}
+.oc-cats .wrap{padding-top:72px;padding-bottom:72px}
+.oc-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px;align-items:stretch}
+.oc-card{display:flex;flex-direction:column;background:var(--surface);border:1px solid var(--line);border-radius:18px;overflow:hidden;scroll-margin-top:calc(96px + env(safe-area-inset-top,0px))}
+.oc-art{position:relative;aspect-ratio:16/8;display:grid;place-items:center;overflow:hidden;background:radial-gradient(120% 90% at 85% 10%,rgba(0,179,224,.38),transparent 55%),linear-gradient(160deg,#00476F,#00263D)}
+.oc-art::before{content:"";position:absolute;inset:0;background-image:radial-gradient(rgba(255,255,255,.14) 1.2px,transparent 1.3px);background-size:14px 14px;-webkit-mask-image:linear-gradient(200deg,#000 10%,transparent 70%);mask-image:linear-gradient(200deg,#000 10%,transparent 70%)}
+.oc-art--mono{background:radial-gradient(120% 90% at 85% 10%,rgba(185,211,227,.28),transparent 55%),linear-gradient(160deg,#16364D,#081B29)}
+.oc-art--mono .pc-chip{background:#DCEBF4}
+.oc-art--compact{background:radial-gradient(120% 90% at 15% 10%,rgba(0,179,224,.5),transparent 55%),linear-gradient(160deg,#005480,#00263D)}
+.oc-art .pc-illo{width:74%}
+.oc-body{padding:26px 26px 28px;display:flex;flex-direction:column;flex:1}
+.oc-name{font-family:var(--ui);font-size:23px;line-height:1.25;color:var(--heading);margin:0 0 10px}
+.oc-lead{margin:0 0 10px;font-family:var(--ui);font-weight:600;font-size:16.5px;line-height:1.45;color:var(--heading)}
+.oc-text{margin:0 0 22px;color:var(--muted);font-size:15.5px;line-height:1.6}
+.oc-label{margin:0 0 4px;font-family:var(--ui);font-size:12.5px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
+.oc-caps{list-style:none;margin:0 0 22px;padding:0}
+.oc-caps li{display:flex;gap:10px;align-items:flex-start;padding:11px 0;border-bottom:1px solid var(--line);font-size:15.5px;line-height:1.45}
+.oc-caps li svg{color:var(--accent);flex:none;margin-top:1px}
+.oc-fams{list-style:none;margin:6px 0 0;padding:16px 18px;background:var(--chip-bg);border-radius:12px;display:grid;gap:8px;margin-top:auto}
+.oc-label + .oc-fams{margin-top:6px}
+.oc-fams li{font-size:15.5px;line-height:1.45;color:var(--heading)}
+.oc-fams strong{font-family:var(--ui);color:var(--chip-text)}
+.oc-matrix{background:var(--warm)}
+.oc-matrix .wrap{padding-top:80px;padding-bottom:80px}
+.oc-matrix h2{font-size:clamp(34px,4vw,52px);color:var(--heading);margin-bottom:28px}
+.oc-table-wrap{overflow-x:auto;background:var(--surface);border:1px solid var(--line);border-radius:16px}
+.oc-table{width:100%;min-width:640px;border-collapse:collapse;font-size:16px}
+.oc-table th,.oc-table td{text-align:left;padding:16px 20px;border-bottom:1px solid var(--line);vertical-align:top}
+.oc-table thead th{font-family:var(--ui);font-size:14px;color:var(--heading);background:var(--surface-2)}
+.oc-table thead small{display:block;font-weight:500;color:var(--muted);font-size:12.5px;margin-top:2px}
+.oc-table tbody th{font-family:var(--ui);color:var(--heading);white-space:nowrap}
+.oc-table tbody tr:last-child th,.oc-table tbody tr:last-child td{border-bottom:0}
+.oc-na{color:var(--muted);font-style:italic}
+.oc-matrix + .cta .wrap{padding-top:72px}
+@media (max-width:1100px){
+  .oc-grid{grid-template-columns:1fr}
+  .oc-card{flex-direction:row}
+  .oc-art{flex:0 0 34%;aspect-ratio:auto;min-height:260px}
+}
+@media (max-width:720px){
+  .oc-hero{padding:44px 0 44px}
+  .oc-card{flex-direction:column}
+  .oc-art{flex:none;aspect-ratio:16/8;min-height:0}
+  .oc-cats .wrap,.oc-matrix .wrap{padding-top:48px;padding-bottom:48px}
+  .oc-marquee li{font-size:18px;padding:0 30px;gap:60px}
+  .oc-marquee li::after{margin-right:-34px}
+}
+
 /* current-page nav state */
 .top-link[aria-current="page"]{color:var(--heading)}
 .top-link[aria-current="page"]::after{transform:scaleX(1)}
@@ -1319,6 +1381,86 @@ main section{scroll-margin-top:90px}
   </section>
 </main>
 
+<main class="oc-view" id="oc-view" hidden aria-labelledby="oc-h">
+  <div class="wrap">
+    <header class="oc-hero">
+      <p class="slash">Print &amp; Document Solutions · Office Print</p>
+      <h1 id="oc-h" class="h-display">The Copiers &amp; <span style="white-space:nowrap">All-in-Ones</span> We Sell and Service</h1>
+      <p class="lead">SumnerOne is your single source for the industry’s most reliable office technology. We sell, lease, service, and support a complete range of all-in-one copiers and desktop printers. Because we partner directly with the world’s leading manufacturers, we aren’t limited to one brand’s catalog. We match your exact office requirements to the right hardware, ensuring your team has the tools they need to work without interruption.</p>
+      <div class="hero-ctas"><a class="btn btn-solid btn-lg" href="#contact">Talk about your office</a><a class="text-link" href="#oc-categories">See the equipment categories <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div>
+    </header>
+  </div>
+
+  <div class="oc-marquee" role="group" aria-label="Manufacturer partners"><ul><li>Konica Minolta</li><li>Canon</li><li>Kyocera</li><li>HP</li><li aria-hidden="true">Konica Minolta</li><li aria-hidden="true">Canon</li><li aria-hidden="true">Kyocera</li><li aria-hidden="true">HP</li><li aria-hidden="true">Konica Minolta</li><li aria-hidden="true">Canon</li><li aria-hidden="true">Kyocera</li><li aria-hidden="true">HP</li><li aria-hidden="true">Konica Minolta</li><li aria-hidden="true">Canon</li><li aria-hidden="true">Kyocera</li><li aria-hidden="true">HP</li><li aria-hidden="true">Konica Minolta</li><li aria-hidden="true">Canon</li><li aria-hidden="true">Kyocera</li><li aria-hidden="true">HP</li><li aria-hidden="true">Konica Minolta</li><li aria-hidden="true">Canon</li><li aria-hidden="true">Kyocera</li><li aria-hidden="true">HP</li></ul></div>
+
+  <section class="oc-cats" id="oc-categories" aria-labelledby="oc-cats-h">
+    <div class="wrap">
+      <h2 id="oc-cats-h" class="oc-sr">Our Equipment Categories</h2>
+      <div class="oc-grid">
+        <article class="oc-card" id="oc-color">
+          <div class="oc-art oc-art--color"><span class="pc-chip">Color</span><svg class="pc-illo" viewBox="0 0 320 160" role="img" aria-label="Color all-in-one A3 office copier with finisher, sold and serviced by SumnerOne"><g stroke="#fff" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><rect x="112" y="34" width="96" height="14" rx="3"/><rect x="104" y="48" width="112" height="30" rx="4"/><rect x="110" y="78" width="100" height="58" rx="3"/><path d="M110 97h100M110 116h100M150 87h20M150 106h20M150 125h20"/><path d="M216 60h34v10h-34"/><rect x="60" y="62" width="44" height="74" rx="3"/><path d="M60 92h44M66 78h22"/><path d="M178 56h26"/></g><circle cx="120" cy="63" r="4" fill="#00B3E0"/><circle cx="132" cy="63" r="4" fill="#E0458B"/><circle cx="144" cy="63" r="4" fill="#F2C94C"/><circle cx="156" cy="63" r="4" fill="#fff"/></svg></div>
+          <div class="oc-body">
+            <h3 class="oc-name">Color All-in-Ones (A3 Copiers)</h3>
+            <p class="oc-lead">Central office hubs for high-impact, professional-quality documents and finishing.</p>
+            <p class="oc-text">These freestanding devices are designed to handle heavy daily usage while producing marketing-grade documents, client presentations, and vivid internal reports.</p>
+            <p class="oc-label">Key Capabilities:</p>
+            <ul class="oc-caps"><li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg><span>Brilliant, high-resolution color printing and high-speed copying</span></li><li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg><span>Advanced finishing options (stapling, hole-punching, booklet making)</span></li><li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg><span>High-capacity paper trays to eliminate constant refilling</span></li><li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg><span>Secure scan-to-email and cloud-folder routing</span></li></ul>
+            <p class="oc-label">Product families</p>
+            <ul class="oc-fams"><li><strong>Konica Minolta:</strong> bizhub Color i-Series</li><li><strong>Canon:</strong> imageRUNNER ADVANCE DX Color</li><li><strong>Kyocera:</strong> TASKalfa Color Series</li></ul>
+          </div>
+        </article>
+        <article class="oc-card" id="oc-mono">
+          <div class="oc-art oc-art--mono"><span class="pc-chip">Black &amp; White</span><svg class="pc-illo" viewBox="0 0 320 160" role="img" aria-label="Black-and-white A3 office copier for high daily volumes, sold and serviced by SumnerOne"><g stroke="#fff" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><rect x="112" y="34" width="96" height="14" rx="3"/><rect x="104" y="48" width="112" height="30" rx="4"/><rect x="110" y="78" width="100" height="58" rx="3"/><path d="M110 97h100M110 116h100M150 87h20M150 106h20M150 125h20"/><path d="M216 60h34v10h-34"/><rect x="60" y="62" width="44" height="74" rx="3"/><path d="M60 92h44M66 78h22"/><path d="M178 56h26"/></g><circle cx="120" cy="63" r="4" fill="#fff"/><circle cx="132" cy="63" r="4" fill="#fff" opacity=".35"/><path d="M226 54h20M226 49h20" stroke="#DCEBF4" stroke-width="2" stroke-linecap="round" opacity=".7"/></svg></div>
+          <div class="oc-body">
+            <h3 class="oc-name">Black-and-White Workhorses (A3)</h3>
+            <p class="oc-lead">High-speed, ultra-reliable devices built for massive, daily document volumes.</p>
+            <p class="oc-text">Engineered for maximum uptime and cost-efficiency, these are the heavy-duty engines powering accounting departments, legal firms, and high-volume production teams.</p>
+            <p class="oc-label">Key Capabilities:</p>
+            <ul class="oc-caps"><li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg><span>Ultra-fast, uninterrupted daily printing and copying</span></li><li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg><span>Rapid, single-pass duplex scanning for digitizing archives</span></li><li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg><span>Secure badge-release printing to protect sensitive documents</span></li><li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg><span>Lowest cost-per-page for high-volume environments</span></li></ul>
+            <p class="oc-label">Product families</p>
+            <ul class="oc-fams"><li><strong>Konica Minolta:</strong> bizhub B&amp;W i-Series</li><li><strong>Canon:</strong> imageRUNNER ADVANCE DX B&amp;W</li><li><strong>Kyocera:</strong> TASKalfa Mono Series</li></ul>
+          </div>
+        </article>
+        <article class="oc-card" id="oc-compact">
+          <div class="oc-art oc-art--compact"><span class="pc-chip">Compact / Desktop</span><svg class="pc-illo" viewBox="0 0 320 160" role="img" aria-label="Compact A4 desktop all-in-one printer on a desk, sold and serviced by SumnerOne"><g stroke="#fff" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M30 122h260"/><rect x="112" y="60" width="96" height="62" rx="5"/><rect x="118" y="46" width="84" height="14" rx="3"/><path d="M112 94h96M148 106h24"/><path d="M208 76h26v8h-26"/><path d="M60 122v-14h28v14M246 122v-22h22v22"/></g><rect x="168" y="68" width="30" height="16" rx="3" fill="#00B3E0" opacity=".65"/></svg></div>
+          <div class="oc-body">
+            <h3 class="oc-name">Compact &amp; Desktop All-in-Ones (A4)</h3>
+            <p class="oc-lead">Enterprise-grade security and scanning in a footprint small enough for a desk.</p>
+            <p class="oc-text">These compact units are perfect for executive suites, reception desks, and small hybrid workgroups that need private, immediate access to high-performance printing and scanning.</p>
+            <p class="oc-label">Key Capabilities:</p>
+            <ul class="oc-caps"><li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg><span>Small-footprint design that sits comfortably on standard desks</span></li><li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg><span>Full scanning, copying, and printing capabilities</span></li><li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg><span>Whisper-quiet operation for close-quarters work</span></li><li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg><span>Enterprise-grade network security protocols</span></li></ul>
+            <p class="oc-label">Product families</p>
+            <ul class="oc-fams"><li><strong>Canon:</strong> imageCLASS &amp; imageRUNNER ADVANCE DX Compact</li><li><strong>Kyocera:</strong> ECOSYS &amp; TASKalfa Compact Series</li><li><strong>Konica Minolta:</strong> bizhub Compact</li><li><strong>HP:</strong> LaserJet Pro &amp; LaserJet Enterprise</li></ul>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="oc-matrix" aria-labelledby="oc-matrix-h">
+    <div class="wrap">
+      <p class="slash">At a glance</p>
+      <h2 id="oc-matrix-h" class="h-display">Brands by category</h2>
+      <div class="oc-table-wrap" tabindex="0" role="region" aria-label="Brands by category table">
+        <table class="oc-table">
+          <thead><tr><th scope="col">Manufacturer</th><th scope="col">Color &amp; Black-and-White Workhorses <small>Freestanding / A3</small></th><th scope="col">Compact &amp; Desktop All-in-Ones <small>A4</small></th></tr></thead>
+          <tbody><tr><th scope="row">Konica Minolta</th><td>bizhub i-Series</td><td>bizhub Compact Series</td></tr><tr><th scope="row">Canon</th><td>imageRUNNER ADVANCE DX</td><td>imageCLASS &amp; imageRUNNER ADVANCE DX Compact</td></tr><tr><th scope="row">Kyocera</th><td>TASKalfa</td><td>ECOSYS &amp; TASKalfa Compact Series</td></tr><tr><th scope="row">HP</th><td><span class="oc-na">Not offered in this category</span></td><td>LaserJet Enterprise &amp; LaserJet Pro</td></tr></tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta" aria-labelledby="oc-cta-h">
+    <div class="wrap">
+      <div class="cta-box">
+        <div><p class="slash" style="color:#7FDCF5">Start the conversation</p><h2 id="oc-cta-h" class="h-display">Not sure which one fits your office?</h2><p>Tell us how your team prints, scans and copies today. We’ll listen first, then match you to the right device and plan.</p></div>
+        <div class="hero-ctas"><a class="btn btn-cyan btn-lg" href="#contact">Talk to someone who listens first</a><a class="btn btn-line-light btn-lg" href="#locations">Find a location</a></div>
+      </div>
+    </div>
+  </section>
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Service", "name": "Office copier and all-in-one sales, leasing, service and support", "serviceType": "Office copier and all-in-one printer sales, leasing and service", "provider": {"@type": "Organization", "name": "SumnerOne", "url": "https://www.sumnerone.com"}, "brand": [{"@type": "Brand", "name": "Konica Minolta"}, {"@type": "Brand", "name": "Canon"}, {"@type": "Brand", "name": "Kyocera"}, {"@type": "Brand", "name": "HP"}], "hasOfferCatalog": {"@type": "OfferCatalog", "name": "Copiers and all-in-ones", "itemListElement": [{"@type": "OfferCatalog", "name": "Color All-in-Ones (A3 Copiers)", "itemListElement": [{"@type": "Offer", "itemOffered": {"@type": "Product", "name": "bizhub Color i-Series", "brand": {"@type": "Brand", "name": "Konica Minolta"}}}, {"@type": "Offer", "itemOffered": {"@type": "Product", "name": "imageRUNNER ADVANCE DX Color", "brand": {"@type": "Brand", "name": "Canon"}}}, {"@type": "Offer", "itemOffered": {"@type": "Product", "name": "TASKalfa Color Series", "brand": {"@type": "Brand", "name": "Kyocera"}}}]}, {"@type": "OfferCatalog", "name": "Black-and-White Workhorses (A3)", "itemListElement": [{"@type": "Offer", "itemOffered": {"@type": "Product", "name": "bizhub B&W i-Series", "brand": {"@type": "Brand", "name": "Konica Minolta"}}}, {"@type": "Offer", "itemOffered": {"@type": "Product", "name": "imageRUNNER ADVANCE DX B&W", "brand": {"@type": "Brand", "name": "Canon"}}}, {"@type": "Offer", "itemOffered": {"@type": "Product", "name": "TASKalfa Mono Series", "brand": {"@type": "Brand", "name": "Kyocera"}}}]}, {"@type": "OfferCatalog", "name": "Compact & Desktop All-in-Ones (A4)", "itemListElement": [{"@type": "Offer", "itemOffered": {"@type": "Product", "name": "imageCLASS & imageRUNNER ADVANCE DX Compact", "brand": {"@type": "Brand", "name": "Canon"}}}, {"@type": "Offer", "itemOffered": {"@type": "Product", "name": "ECOSYS & TASKalfa Compact Series", "brand": {"@type": "Brand", "name": "Kyocera"}}}, {"@type": "Offer", "itemOffered": {"@type": "Product", "name": "bizhub Compact", "brand": {"@type": "Brand", "name": "Konica Minolta"}}}, {"@type": "Offer", "itemOffered": {"@type": "Product", "name": "LaserJet Pro & LaserJet Enterprise", "brand": {"@type": "Brand", "name": "HP"}}}]}]}}</script>
+</main>
+
 <footer class="footer" id="about">
   <div class="wrap">
     <div class="foot-grid">
@@ -1649,22 +1791,23 @@ window.S1Chooser=(function(){
 <script>
 (function(){
   const home=document.getElementById('top');
-  const piView=document.getElementById('pi-view');
   const baseTitle=document.title;
+  const views=[
+    {key:'production-industrial',el:document.getElementById('pi-view'),title:'Production & Industrial Print – SumnerOne'},
+    {key:'office-copiers',el:document.getElementById('oc-view'),title:'Office Copiers & All-in-Ones – SumnerOne'}
+  ].filter(v=>v.el);
   function route(){
     const h=location.hash.slice(1);
-    const piTarget=h&&h!=='production-industrial'?document.getElementById(h):null;
-    const onPI=!!piView&&(h==='production-industrial'||(!!piTarget&&piView.contains(piTarget)));
-    home.hidden=onPI; if(piView) piView.hidden=!onPI;
-    document.title=onPI?'Production & Industrial Print – SumnerOne':baseTitle;
-    if(onPI){
-      if(piTarget) requestAnimationFrame(()=>piTarget.scrollIntoView());
+    const target=h?document.getElementById(h):null;
+    const active=views.find(v=>h===v.key||(target&&target!==v.el&&v.el.contains(target)))||null;
+    home.hidden=!!active;
+    views.forEach(v=>{v.el.hidden=v!==active;});
+    document.title=active?active.title:baseTitle;
+    if(active){
+      if(h!==active.key&&target) requestAnimationFrame(()=>target.scrollIntoView());
       else window.scrollTo(0,0);
     }
-    else if(h){
-      const t=document.getElementById(h);
-      if(t) requestAnimationFrame(()=>t.scrollIntoView());
-    }
+    else if(target) requestAnimationFrame(()=>target.scrollIntoView());
   }
   window.addEventListener('hashchange',route);
   route();
