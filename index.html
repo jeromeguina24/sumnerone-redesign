@@ -592,6 +592,127 @@ main section{scroll-margin-top:90px}
   .pc-filter{flex:none}
 }
 
+/* ---------- Print & Document Solutions page ---------- */
+.pd-hero{background:transparent}
+.pd-hero-in{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,1fr);gap:56px;align-items:center;padding-top:64px;padding-bottom:64px}
+.pd-hero-slash{color:#7FDCF5}
+.pd-hero h1{color:var(--heading);font-size:clamp(44px,5.4vw,76px);max-width:14ch}
+.pd-hero .hero-ctas{justify-content:flex-start;align-items:center;gap:22px}
+.pd-hero .btn{gap:10px}
+.pd-env{background:var(--deep);color:#fff;border-radius:20px;padding:28px}
+.pd-env-title{margin:0 0 16px;font-family:var(--ui);font-weight:700;font-size:12.5px;letter-spacing:.08em;text-transform:uppercase;color:#7FDCF5}
+.pd-env-stack{list-style:none;margin:0;padding:16px;border:1px dashed rgba(127,220,245,.45);border-radius:12px;display:grid;gap:10px}
+.pd-env-stack li{display:grid;grid-template-columns:1fr auto 10px;gap:14px;align-items:center;padding:14px 16px;border-radius:10px;background:rgba(0,38,61,.55);border:1px solid rgba(255,255,255,.14);font-family:var(--ui);font-weight:600;font-size:15.5px}
+.pd-env-stack small{font-size:11.5px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:#7FDCF5}
+.pd-env-stack i{width:9px;height:9px;border-radius:50%;background:#00B3E0;box-shadow:0 0 0 4px rgba(0,179,224,.18)}
+.pd-env-foot{margin:16px 0 0;font-size:14.5px;color:var(--on-deep-muted)}
+.pd-subnav-label{display:flex;align-items:center;padding:0 14px 0 0;font-family:var(--ui);font-weight:700;font-size:12.5px;letter-spacing:.07em;text-transform:uppercase;color:var(--accent);white-space:nowrap}
+.pd-sec{scroll-margin-top:calc(134px + env(safe-area-inset-top,0px))}
+.pd-sec>.wrap{padding-top:96px;padding-bottom:96px}
+.pd-sec--warm{background:var(--warm)}
+.pd-sec--mist{background:var(--surface-2)}
+.pd-sec--dark{background:linear-gradient(170deg,#00395C,#00263D);color:#fff}
+.pd-eyebrow{display:flex;align-items:center;gap:12px;margin:0 0 18px;font-family:var(--ui);font-weight:700;font-size:13px;letter-spacing:.07em;text-transform:uppercase;color:var(--accent)}
+.pd-eyebrow::before{content:"";width:36px;height:2px;background:var(--cyan)}
+.pd-eyebrow-n{color:var(--muted);font-weight:600}
+.pd-sec--dark .pd-eyebrow{color:#7FDCF5}.pd-sec--dark .pd-eyebrow-n{color:var(--on-deep-muted)}
+.pd-head{max-width:820px;margin-bottom:40px}
+.pd-head h2,.pd-split h2{font-size:clamp(36px,4.4vw,60px);color:var(--heading)}
+.pd-sec--dark h2{color:#fff}
+.pd-intro{margin:20px 0 0;font-size:18.5px;line-height:1.65;color:var(--text);max-width:64ch}
+.pd-sec--dark .pd-intro{color:var(--on-deep-muted)}
+.pd-split{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);gap:56px;align-items:end;margin-bottom:40px}
+.pd-split .pd-intro{margin:0}
+.pd-label{margin:0;font-family:var(--ui);font-weight:700;font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--accent)}
+.pd-mini{margin:18px 0 8px;font-family:var(--ui);font-weight:700;font-size:12px;letter-spacing:.07em;text-transform:uppercase;color:var(--heading)}
+.pd-mini--rule{padding-top:16px;border-top:1px solid var(--line)}
+.pd-tags{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:6px}
+.pd-tags li{font-family:var(--ui);font-weight:600;font-size:13px;padding:5px 10px;border-radius:6px;border:1px solid var(--line);background:var(--surface-2);color:var(--heading)}
+.pd-hgrid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px}
+.pd-hc{display:flex;flex-direction:column;justify-content:space-between;gap:28px;background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:24px;min-height:190px}
+.pd-hc-q{margin:0;font-family:var(--display);font-size:24px;line-height:1.3;color:var(--heading)}
+.pd-hc a,.pd-bridge a{display:inline-flex;align-items:center;gap:6px;font-family:var(--ui);font-weight:700;font-size:13.5px;letter-spacing:.04em;text-transform:uppercase;color:var(--accent)}
+.pd-bridge{margin-top:20px;display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap;padding:20px 24px;border-left:4px solid var(--cyan);border-radius:12px;background:var(--chip-bg)}
+.pd-bridge p{margin:0;font-size:16.5px;color:var(--heading)}
+.pd-bridge a{text-transform:none;letter-spacing:0;font-size:15px}
+.pd-filter{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:24px}
+.pd-filter button{font-family:var(--ui);font-weight:600;font-size:14.5px;min-height:42px;padding:0 18px;border-radius:8px;border:1px solid var(--line);background:var(--surface);color:var(--text)}
+.pd-filter button[aria-pressed="true"]{background:var(--btn-bg);border-color:var(--btn-bg);color:var(--btn-text)}
+.pd-devgrid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
+.pd-dev{display:flex;flex-direction:column;background:var(--surface);border:1px solid var(--line);border-radius:16px;overflow:hidden;transition:transform .2s,box-shadow .2s}
+.pd-dev[hidden]{display:none}
+@media (hover:hover){.pd-dev:hover{transform:translateY(-4px);box-shadow:var(--shadow)}.pd-dev:hover .pc-illo{transform:scale(1.04)}}
+.pd-dev .pc-art{aspect-ratio:16/8}
+.pd-dev-body{padding:22px 24px;flex:1}
+.pd-dev h3,.pd-soft h3,.pd-cap h3,.pd-stepc h3{margin:6px 0 8px;font-family:var(--ui);font-size:21px;line-height:1.25;color:var(--heading)}
+.pd-dev-desc,.pd-soft-desc,.pd-cap p:not(.pd-label),.pd-stepc p:not(.pd-stepc-n){margin:0;color:var(--muted);font-size:15.5px;line-height:1.6}
+.pd-fams{margin:0;font-size:15px;line-height:1.55;color:var(--text)}
+.pd-dev-link{display:flex;align-items:center;gap:6px;padding:16px 24px;border-top:1px solid var(--line);background:var(--surface-2);font-family:var(--ui);font-weight:700;font-size:14.5px;color:var(--accent)}
+.pd-dev-link:hover{text-decoration:underline}
+.pd-note{margin:18px 0 0;font-size:14px;color:var(--muted)}
+.pd-mps{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:20px;align-items:start}
+.pd-hearq{margin:0;padding:30px;background:var(--surface);border-left:4px solid var(--cyan);border-radius:4px 14px 14px 4px}
+.pd-hearq figcaption{font-family:var(--ui);font-weight:700;font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin-bottom:12px}
+.pd-hearq blockquote{margin:0;font-family:var(--display);font-size:clamp(24px,2.4vw,32px);line-height:1.3;color:var(--heading)}
+.pd-capgrid{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.pd-cap{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:22px}
+.pd-cap h3{font-size:19px}
+.pd-actions{margin-top:28px;display:flex;align-items:center;gap:20px;flex-wrap:wrap}
+.pd-actions p{margin:0;font-size:15px;color:var(--muted)}
+.pd-actions .btn{gap:10px}
+.pd-softgrid{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.pd-soft{background:var(--surface);border:1px solid var(--line);border-top:4px solid var(--cyan);border-radius:6px 6px 16px 16px;padding:28px}
+.pd-soft h3{font-family:var(--display);font-size:34px;margin:8px 0 14px}
+.pd-callout{margin-top:20px;padding:20px 24px;border-left:4px solid var(--cyan);border-radius:12px;background:var(--chip-bg)}
+.pd-callout p{margin:0;font-size:16px;line-height:1.55;color:var(--heading)}
+.pd-secgrid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px}
+.pd-secc{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.16);border-radius:14px;padding:24px}
+.pd-secc .pd-label{color:#7FDCF5}
+.pd-secc-ic{display:inline-grid;place-items:center;margin:16px 0 4px;color:#7FDCF5}
+.pd-secc h3{margin:8px 0 10px;font-family:var(--ui);font-size:20px;line-height:1.25;color:#fff}
+.pd-secc p{margin:0 0 16px;font-size:15px;line-height:1.6;color:var(--on-deep-muted)}
+.pd-secc ul{list-style:none;margin:0;padding:12px 0 0;border-top:1px solid rgba(255,255,255,.16)}
+.pd-secc li{padding:5px 0;font-size:14.5px;color:#DCEBF4}
+.pd-verify{margin-top:20px;display:grid;grid-template-columns:220px 1fr;gap:24px;padding:22px 26px;border:1px solid rgba(255,255,255,.22);border-radius:12px}
+.pd-verify b{font-family:var(--ui);font-size:17px;color:#fff}
+.pd-verify p{margin:0;font-size:15.5px;line-height:1.6;color:var(--on-deep-muted)}
+.pd-dark-ctas{justify-content:flex-start;margin-top:28px;gap:14px}
+.pd-dark-ctas .btn{gap:10px}
+.pd-stepgrid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
+.pd-stepc{background:var(--surface);border:1px solid var(--line);border-top:4px solid var(--deep);border-radius:6px 6px 16px 16px;padding:26px}
+.pd-stepc-n{margin:0 0 10px;font-family:var(--display);font-size:46px;line-height:1;color:var(--cyan)}
+.pd-stepc .pd-tags{margin-top:16px}
+.pd-brandbar{margin-top:20px;display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap;padding:24px 28px;border-radius:14px;background:var(--chip-bg)}
+.pd-brandbar-t{margin:0 0 4px;font-family:var(--ui);font-weight:700;font-size:20px;color:var(--heading)}
+.pd-brandbar p:not(.pd-brandbar-t){margin:0;font-size:14.5px;color:var(--muted)}
+.pd-brandbar .btn{gap:10px}
+.pd-new{margin:0 0 10px;font-family:var(--ui);font-weight:700;font-size:12.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--accent)}
+.pd-plangrid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px;align-items:stretch}
+.pd-planc{position:relative;display:flex;flex-direction:column;background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:30px 28px}
+.pd-planc--feat{border:2px solid var(--cyan);box-shadow:var(--shadow)}
+.pd-planc-badge{position:absolute;top:-14px;left:50%;transform:translateX(-50%);white-space:nowrap;background:#00B3E0;color:#00263D;font-family:var(--ui);font-weight:700;font-size:11.5px;letter-spacing:.07em;text-transform:uppercase;padding:6px 12px;border-radius:6px}
+.pd-planc h3{margin:8px 0 6px;font-family:var(--display);font-size:40px;line-height:1.05;color:var(--heading)}
+.pd-planc-head{margin:0 0 12px;font-family:var(--ui);font-weight:700;font-size:18px;color:var(--heading)}
+.pd-planc-desc{margin:0 0 18px;color:var(--muted);font-size:15.5px;line-height:1.6}
+.pd-planc-fit{margin:auto 0 0;padding-top:16px;border-top:1px solid var(--line);font-family:var(--ui);font-weight:600;font-size:15px;color:var(--accent)}
+.pd-final{background:linear-gradient(160deg,#00476F,#00263D);color:#fff}
+.pd-final-in{display:flex;align-items:center;justify-content:space-between;gap:32px;flex-wrap:wrap;padding-top:88px;padding-bottom:88px}
+.pd-final h2{color:#fff;font-size:clamp(34px,4vw,56px)}
+.pd-final p:not(.slash){margin:16px 0 0;max-width:60ch;font-size:18px;line-height:1.6;color:var(--on-deep-muted)}
+.pd-final .btn{gap:10px}
+@media (max-width:1100px){.pd-hgrid,.pd-secgrid{grid-template-columns:repeat(2,minmax(0,1fr))}.pd-devgrid{grid-template-columns:repeat(2,minmax(0,1fr))}.pd-mps{grid-template-columns:1fr}}
+@media (max-width:900px){
+  .pd-hero-in,.pd-split{grid-template-columns:1fr;gap:28px}
+  .pd-hero-in{padding-top:52px;padding-bottom:60px}
+  .pd-sec>.wrap{padding-top:64px;padding-bottom:64px}
+  .pd-softgrid,.pd-stepgrid,.pd-plangrid,.pd-devgrid{grid-template-columns:1fr}
+  .pd-plangrid{gap:28px}
+  .pd-verify{grid-template-columns:1fr;gap:8px}
+  .pd-final-in{padding-top:60px;padding-bottom:60px}
+}
+@media (max-width:640px){.pd-hgrid,.pd-secgrid,.pd-capgrid{grid-template-columns:1fr}.pd-hc{min-height:0}.pd-hero .hero-ctas .btn,.pd-dark-ctas .btn{width:100%;justify-content:center}}
+@media (prefers-reduced-motion:reduce){.pd-dev,.pd-dev .pc-illo{transition:none}}
+
 /* ---------- Office copiers & all-in-ones page ---------- */
 .oc-view{padding-bottom:24px}
 .oc-sr{position:absolute;width:1px;height:1px;margin:-1px;padding:0;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0}
@@ -2235,6 +2356,150 @@ main section{scroll-margin-top:90px}
   </section>
 </main>
 
+<main class="pd-view" id="pd-view" hidden aria-labelledby="pd-h">
+  <section class="pd-hero">
+    <div class="wrap pd-hero-in">
+      <div>
+        <p class="slash">Solutions · Print &amp; Document Solutions</p>
+        <h1 id="pd-h" class="h-display">Office printing should work. And stay out of your way.</h1>
+        <p class="lead">Printers and copiers are only part of the picture. We help you choose the right equipment, manage costs, support your users and make informed decisions about print security.</p>
+        <div class="hero-ctas"><a class="btn btn-solid btn-lg" href="#pd-overview">Explore print solutions <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a><a class="text-link" href="#pd-plans">Prefer a simpler plan? <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div>
+      </div>
+      <div class="pd-env" role="group" aria-label="One connected print environment">
+        <p class="pd-env-title">One connected print environment</p>
+        <ul class="pd-env-stack"><li><span>People &amp; documents</span><small>Access</small><i aria-hidden="true"></i></li><li><span>Devices across locations</span><small>Print</small><i aria-hidden="true"></i></li><li><span>Management software</span><small>Control</small><i aria-hidden="true"></i></li><li><span>Service &amp; governance</span><small>Support</small><i aria-hidden="true"></i></li></ul>
+        <p class="pd-env-foot">More than boxes. One environment your business depends on.</p>
+      </div>
+    </div>
+  </section>
+
+  <nav class="pi-subnav pd-subnav" aria-label="Print &amp; Document Solutions sections"><ul><li class="pd-subnav-label">Explore 1–6</li><li><a href="#pd-devices" data-pi-link="pd-devices"><span>1</span>Devices</a></li><li><a href="#pd-managed" data-pi-link="pd-managed"><span>2</span>Managed Print</a></li><li><a href="#pd-software" data-pi-link="pd-software"><span>3</span>Software</a></li><li><a href="#pd-security" data-pi-link="pd-security"><span>4</span>Secure Print</a></li><li><a href="#pd-service" data-pi-link="pd-service"><span>5</span>Service</a></li><li><a href="#pd-plans" data-pi-link="pd-plans"><span>6</span>Plans</a></li></ul></nav>
+
+  <section class="pd-sec pd-sec--warm" id="pd-overview" aria-labelledby="pd-overview-h">
+    <div class="wrap">
+      <div class="pd-split">
+        <div><p class="slash">What we hear first</p><h2 id="pd-overview-h" class="h-display">Most office print problems aren’t about the printer.</h2></div>
+        <p class="pd-intro">The price on the device matters. But so do the service calls, the security settings, the wasted pages and the time your team spends keeping everything moving.</p>
+      </div>
+      <div class="pd-hgrid"><div class="pd-hc"><p class="pd-hc-q">“Our printing costs are hard to explain.”</p><a href="#pd-managed">Manage costs <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div><div class="pd-hc"><p class="pd-hc-q">“IT has inherited every printer problem.”</p><a href="#pd-service">Support the fleet <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div><div class="pd-hc"><p class="pd-hc-q">“We don’t know how secure our printing is.”</p><a href="#pd-security">Explore security <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div><div class="pd-hc"><p class="pd-hc-q">“Every office does things differently.”</p><a href="#pd-software">Connect the environment <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div></div>
+      <div class="pd-bridge"><p><b>Just need reliable equipment, service and a clear price?</b> You don’t have to navigate every technology category to get started.</p><a class="text-link" href="#pd-plans">See Workplace Print Plans <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div>
+    </div>
+  </section>
+
+  <section class="pd-sec" id="pd-devices" aria-labelledby="pd-devices-h">
+    <div class="wrap">
+      <p class="pd-eyebrow"><span class="pd-eyebrow-n">1 / 6</span>Office Print &amp; MFPs</p>
+      <div class="pd-head"><h2 id="pd-devices-h" class="h-display">The right devices for the way your teams work.</h2><p class="pd-intro">We start with what people actually print, scan and copy. Then we match the device class to the workload rather than asking the workload to fit the device.</p></div>
+      <div class="pd-filter" role="group" aria-label="Filter equipment"><button type="button" data-filter="all" aria-pressed="true">All equipment</button><button type="button" data-filter="a3" aria-pressed="false">A3 workgroup</button><button type="button" data-filter="a4" aria-pressed="false">A4 desktop</button></div>
+      <div class="pd-devgrid" id="pd-devgrid"><article class="pd-dev" data-type="a3">
+            <div class="pc-art pc-art--color"><svg class="pc-illo pc-illo--detailed" viewBox="0 0 600 300" aria-hidden="true" focusable="false"><g id="pdv1-fills" fill="#12344D" stroke="none"><rect x="242" y="46" width="116" height="31" rx="4"/><path d="M289 65 L352 52 L355 59 L292 72 Z"/><rect x="219" y="76" width="162" height="29" rx="5"/><rect x="205" y="100" width="190" height="34" rx="7"/><path fill-rule="evenodd" d="M212 130 H388 V254 Q388 261 381 261 H219 Q212 261 212 254 Z M232 140 H368 V165 H232 Z"/><path d="M259 158 H341 V165 H259 Z"/><rect x="230" y="261" width="22" height="8" rx="1"/><rect x="348" y="261" width="22" height="8" rx="1"/></g><g id="pdv1-linework" fill="none" stroke="#F2F7FA" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="242" y="46" width="116" height="31" rx="4" stroke-width="2"/><path d="M289 65 L352 52 L355 59 L292 72" stroke-width="1.7"/><path d="M251 77 H352" stroke-width="1.2"/><path d="M219 100 V81 Q219 76 225 76 H375 Q381 76 381 81 V100" stroke-width="1.7"/><path d="M225 92 H375" stroke-width="1.25"/><rect x="205" y="100" width="190" height="34" rx="7" stroke-width="2"/><path d="M212 134 V254 Q212 261 219 261 H381 Q388 261 388 254 V134" stroke-width="2"/><path d="M232 135 V165 H368 V135" stroke-width="1.7"/><path d="M232 165 H368" stroke-width="1.7"/><path d="M259 158 V154 Q259 152 263 152 H337 Q341 152 341 154 V158" stroke-width="1.7"/><path d="M212 173 H388 M212 202 H388 M212 231 H388" stroke-width="1.7"/><rect x="281" y="184" width="38" height="7" rx="3.5" stroke-width="1.7"/><rect x="281" y="213" width="38" height="7" rx="3.5" stroke-width="1.7"/><rect x="281" y="242" width="38" height="7" rx="3.5" stroke-width="1.7"/><path d="M220 173 V254 M380 173 V254" stroke-width="1.2"/><rect x="230" y="261" width="22" height="8" rx="1" stroke-width="1.7"/><rect x="348" y="261" width="22" height="8" rx="1" stroke-width="1.7"/></g><g id="pdv1-accents" fill="none" stroke="#00B3E0" stroke-width="2.7" stroke-linecap="round" stroke-linejoin="round"><path d="M348 116 H374 M282 157 H318" stroke-width="2.7"/><circle cx="226" cy="116" r="3.5" fill="#00B3E0" stroke="none"/><circle cx="239" cy="116" r="3.5" fill="#E84291" stroke="none"/><circle cx="252" cy="116" r="3.5" fill="#F0D95B" stroke="none"/><circle cx="265" cy="116" r="3.5" fill="#F2F7FA" stroke="none"/></g></svg></div>
+            <div class="pd-dev-body">
+              <p class="pd-label">A3 / Color</p>
+              <h3>Color workgroup MFPs</h3>
+              <p class="pd-dev-desc">Shared hubs for everyday color documents, proposals, presentations and scanning.</p>
+              <p class="pd-mini">How customers use these</p><ul class="pd-tags"><li>Presentations</li><li>Everyday color</li><li>Scanning</li></ul>
+              <p class="pd-mini pd-mini--rule">Representative families</p>
+              <p class="pd-fams">Canon imageRUNNER ADVANCE DX • Kyocera TASKalfa • Konica Minolta bizhub</p>
+            </div>
+            <a class="pd-dev-link" href="#office-copiers">See equipment portfolio <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+          </article><article class="pd-dev" data-type="a3">
+            <div class="pc-art pc-art--mono"><svg class="pc-illo pc-illo--detailed" viewBox="0 0 600 300" aria-hidden="true" focusable="false"><g id="pdv2-fills" fill="#12344D" stroke="none"><rect x="242" y="46" width="116" height="31" rx="4"/><path d="M289 65 L352 52 L355 59 L292 72 Z"/><rect x="219" y="76" width="162" height="29" rx="5"/><rect x="205" y="100" width="190" height="34" rx="7"/><path fill-rule="evenodd" d="M212 130 H388 V254 Q388 261 381 261 H219 Q212 261 212 254 Z M232 140 H368 V165 H232 Z"/><path d="M259 158 H341 V165 H259 Z"/><rect x="230" y="261" width="22" height="8" rx="1"/><rect x="348" y="261" width="22" height="8" rx="1"/></g><g id="pdv2-linework" fill="none" stroke="#F2F7FA" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="242" y="46" width="116" height="31" rx="4" stroke-width="2"/><path d="M289 65 L352 52 L355 59 L292 72" stroke-width="1.7"/><path d="M251 77 H352" stroke-width="1.2"/><path d="M219 100 V81 Q219 76 225 76 H375 Q381 76 381 81 V100" stroke-width="1.7"/><path d="M225 92 H375" stroke-width="1.25"/><rect x="205" y="100" width="190" height="34" rx="7" stroke-width="2"/><path d="M212 134 V254 Q212 261 219 261 H381 Q388 261 388 254 V134" stroke-width="2"/><path d="M232 135 V165 H368 V135" stroke-width="1.7"/><path d="M232 165 H368" stroke-width="1.7"/><path d="M259 158 V154 Q259 152 263 152 H337 Q341 152 341 154 V158" stroke-width="1.7"/><path d="M212 173 H388 M212 202 H388 M212 231 H388" stroke-width="1.7"/><rect x="281" y="184" width="38" height="7" rx="3.5" stroke-width="1.7"/><rect x="281" y="213" width="38" height="7" rx="3.5" stroke-width="1.7"/><rect x="281" y="242" width="38" height="7" rx="3.5" stroke-width="1.7"/><path d="M220 173 V254 M380 173 V254" stroke-width="1.2"/><rect x="230" y="261" width="22" height="8" rx="1" stroke-width="1.7"/><rect x="348" y="261" width="22" height="8" rx="1" stroke-width="1.7"/></g><g id="pdv2-accents" fill="none" stroke="#00B3E0" stroke-width="2.7" stroke-linecap="round" stroke-linejoin="round"><path d="M348 116 H374 M282 157 H318" stroke-width="2.7"/><circle cx="226" cy="116" r="3.5" fill="#697780" stroke="#F2F7FA" stroke-width="0.8"/><circle cx="239" cy="116" r="3.5" fill="#F2F7FA" stroke="none"/></g></svg></div>
+            <div class="pd-dev-body">
+              <p class="pd-label">A3 / Monochrome</p>
+              <h3>Black-and-white MFPs</h3>
+              <p class="pd-dev-desc">Dependable shared devices for high-volume reports, records, forms and daily office work.</p>
+              <p class="pd-mini">How customers use these</p><ul class="pd-tags"><li>Reports</li><li>Forms</li><li>High-volume B&amp;W</li></ul>
+              <p class="pd-mini pd-mini--rule">Representative families</p>
+              <p class="pd-fams">Canon imageRUNNER ADVANCE DX • Kyocera TASKalfa • Konica Minolta bizhub</p>
+            </div>
+            <a class="pd-dev-link" href="#office-copiers">See equipment portfolio <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+          </article><article class="pd-dev" data-type="a4">
+            <div class="pc-art pc-art--inkjet"><svg class="pc-illo pc-illo--detailed" viewBox="0 0 600 300" aria-hidden="true" focusable="false"><g id="pdv3-fills" fill="#12344D" stroke="none"><path d="M240 60 Q240 54 246 54 H363 Q369 54 369 60 V87 H240 Z"/><path d="M326 54 V48 H363 Q368 48 368 53 V54 Z"/><path d="M226 87 H381 Q389 87 389 95 V118 H218 V95 Q218 87 226 87 Z"/><path fill-rule="evenodd" d="M226 117 H382 V252 Q382 259 375 259 H233 Q226 259 226 252 Z M245 141 H363 V168 H245 Z"/><path d="M257 160 H353 V168 H257 Z"/><rect x="241" y="259" width="22" height="7" rx="1.5"/><rect x="347" y="259" width="22" height="7" rx="1.5"/><rect x="312" y="106" width="82" height="33" rx="5"/></g><g id="pdv3-linework" fill="none" stroke="#F2F7FA" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M240 87 V60 Q240 54 246 54 H363 Q369 54 369 60 V87" stroke-width="2"/><path d="M326 54 V48 H363 Q368 48 368 53 V54" stroke-width="1.7"/><path d="M249 73 H360 M246 81 H365" stroke-width="1.2"/><path d="M226 87 H381 Q389 87 389 95 V105 M218 118 V95 Q218 87 226 87" stroke-width="2"/><path d="M227 103 H310 M218 118 H307" stroke-width="1.25"/><path d="M226 118 V252 Q226 259 233 259 H375 Q382 259 382 252 V139" stroke-width="2"/><path d="M245 141 V168 H363 V141" stroke-width="1.7"/><path d="M257 160 V155 Q257 152 261 152 H349 Q353 152 353 155 V160" stroke-width="1.7"/><path d="M257 168 H353" stroke-width="1.25"/><path d="M226 184 H382 M226 219 H382" stroke-width="1.7"/><path d="M238 184 V250 M370 184 V250" stroke-width="1.2"/><rect x="286" y="196" width="36" height="7" rx="3.5"/><rect x="286" y="231" width="36" height="7" rx="3.5"/><rect x="241" y="259" width="22" height="7" rx="1.5"/><rect x="347" y="259" width="22" height="7" rx="1.5"/><path d="M328 106 V102 H343" stroke-width="1.25"/><rect x="312" y="106" width="82" height="33" rx="5" stroke-width="2"/><rect x="320" y="113" width="66" height="19" rx="2" stroke-width="1.25"/></g><g id="pdv3-accents" fill="none" stroke="#00B3E0" stroke-width="2.7" stroke-linecap="round" stroke-linejoin="round"><path d="M334 123 H372"/><path d="M276 156 H313"/><path d="M245 91 H272"/></g></svg></div>
+            <div class="pd-dev-body">
+              <p class="pd-label">A4 / Compact</p>
+              <h3>Desktop &amp; small-workgroup printers</h3>
+              <p class="pd-dev-desc">Smaller footprints for reception desks, branch offices, private workspaces and local teams.</p>
+              <p class="pd-mini">How customers use these</p><ul class="pd-tags"><li>Branch offices</li><li>Small teams</li><li>Desk-side print</li></ul>
+              <p class="pd-mini pd-mini--rule">Representative families</p>
+              <p class="pd-fams">HP LaserJet • Kyocera ECOSYS • Canon imageCLASS • Konica Minolta bizhub</p>
+            </div>
+            <a class="pd-dev-link" href="#office-copiers">See equipment portfolio <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+          </article></div>
+      <p class="pd-note">Product family examples reflect the current redesign portfolio; exact models, availability and supported configurations require review before publication.</p>
+    </div>
+  </section>
+
+  <section class="pd-sec pd-sec--warm" id="pd-managed" aria-labelledby="pd-managed-h">
+    <div class="wrap">
+      <p class="pd-eyebrow"><span class="pd-eyebrow-n">2 / 6</span>Managed Print Services</p>
+      <div class="pd-head"><h2 id="pd-managed-h" class="h-display">Less time managing printers. More control over the costs.</h2><p class="pd-intro">A print fleet can quietly become a collection of service calls, supplies orders, redundant devices and invoices nobody has time to analyze. Managed Print Services brings more structure to the work behind everyday printing.</p></div>
+      <div class="pd-mps">
+        <figure class="pd-hearq"><figcaption>What we hear</figcaption><blockquote>“We can tell you the price per page. We can’t tell you what the whole environment is costing us.”</blockquote></figure>
+        <div class="pd-capgrid"><div class="pd-cap"><p class="pd-label">1 / Visibility</p><h3>Understand the fleet</h3><p>Inventory, print volumes, usage patterns and device placement.</p></div><div class="pd-cap"><p class="pd-label">2 / Service</p><h3>Keep work moving</h3><p>Coordinated service, supplies and support for the devices you depend on.</p></div><div class="pd-cap"><p class="pd-label">3 / Cost</p><h3>See the spend</h3><p>Clearer usage and cost information to support better decisions.</p></div><div class="pd-cap"><p class="pd-label">4 / Fit</p><h3>Right-size over time</h3><p>Use what the data reveals to revisit placement, capacity and workflows.</p></div></div>
+      </div>
+      <div class="pd-actions"><a class="btn btn-solid btn-lg" href="#pd-plans">See simpler ways to manage print <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a><p>Good fit when equipment, service and spending have become disconnected.</p></div>
+    </div>
+  </section>
+
+  <section class="pd-sec pd-sec--mist" id="pd-software" aria-labelledby="pd-software-h">
+    <div class="wrap">
+      <p class="pd-eyebrow"><span class="pd-eyebrow-n">3 / 6</span>Print Management Software</p>
+      <div class="pd-head"><h2 id="pd-software-h" class="h-display">Know who’s printing, where, and why.</h2><p class="pd-intro">Software gives organizations tools for print release, access policies, cost allocation and reporting. The right platform depends on your devices, users, sites and IT environment.</p></div>
+      <div class="pd-softgrid"><article class="pd-soft"><p class="pd-label">Print management platform</p><h3>PaperCut</h3><p class="pd-soft-desc">Print management options for organizations that want practical controls and visibility across supported devices. Depending on product and configuration, capabilities can include user tracking, cost allocation, print rules and secure release.</p><p class="pd-mini">Common applications</p><ul class="pd-tags"><li>Usage reporting</li><li>User policies</li><li>Secure release</li><li>Shared device fleets</li></ul></article><article class="pd-soft"><p class="pd-label">Print &amp; scan management platform</p><h3>Canon uniFLOW</h3><p class="pd-soft-desc">Integrated print and scan management for organizations that need user authentication, print controls, reporting and document workflows. Deployment design can span devices, locations and user groups.</p><p class="pd-mini">Common applications</p><ul class="pd-tags"><li>Badge authentication</li><li>Print accounting</li><li>Secure release</li><li>Document capture</li></ul></article></div>
+      <div class="pd-callout"><p><b>Not every office needs the same software footprint.</b> We help map requirements before recommending a platform, licenses, policies or rollout approach. Final features vary by product edition and deployment.</p></div>
+    </div>
+  </section>
+
+  <section class="pd-sec pd-sec--dark" id="pd-security" aria-labelledby="pd-security-h">
+    <div class="wrap">
+      <p class="pd-eyebrow"><span class="pd-eyebrow-n">4 / 6</span>Secure Print</p>
+      <div class="pd-head"><h2 id="pd-security-h" class="h-display">Print security is more than a password at the printer.</h2><p class="pd-intro">The infrastructure that carries a print job, the device that receives it, the configuration that protects it and the information it produces all deserve attention.</p></div>
+      <div class="pd-secgrid"><article class="pd-secc"><p class="pd-label">The pipes</p><span class="pd-secc-ic"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 8h8a4 4 0 0 1 4 4v10M2 14h4a2 2 0 0 1 2 2v6"/><path d="M14 2v4"/></svg></span><h3>Secure the print infrastructure</h3><p>Make informed choices about how Windows and other systems communicate with printers.</p><ul><li>Windows Protected Print mode</li><li>IPP and Mopria compatibility</li><li>OEM vs. modern driver planning</li></ul></article><article class="pd-secc"><p class="pd-label">The house</p><span class="pd-secc-ic"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 11l9-7 9 7"/><path d="M5 10v10h14V10"/><path d="M10 20v-5h4v5"/></svg></span><h3>Harden the device</h3><p>Start with deliberate device settings instead of relying on whatever ships out of the box.</p><ul><li>Device configuration review</li><li>Access and network settings</li><li>Firmware and service settings</li></ul></article><article class="pd-secc"><p class="pd-label">The inspections</p><span class="pd-secc-ic"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="3" width="14" height="18" rx="2"/><path d="M9 3v2h6V3M8.5 12l2 2 4-4M9 17h6"/></svg></span><h3>Verify the configuration</h3><p>Where agreed, review key settings against a known baseline and address findings.</p><ul><li>Documented baseline</li><li>Scoped periodic checks</li><li>Findings and next steps</li></ul></article><article class="pd-secc"><p class="pd-label">What’s inside</p><span class="pd-secc-ic"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 3h9l4 4v14H6z"/><path d="M15 3v4h4"/><rect x="9" y="12" width="7" height="6" rx="1"/><path d="M10.5 12v-1.5a2 2 0 0 1 4 0V12"/></svg></span><h3>Protect the information</h3><p>Help keep sensitive output and print access from ending up in the wrong hands.</p><ul><li>User authentication</li><li>Secure print release</li><li>Access policies</li></ul></article></div>
+      <div class="pd-verify"><b>What we mean by verification</b><p>Documented checks can help identify settings that changed. They are not the same as continuous security monitoring, incident detection or a 24/7 SIEM service. Actual scope would be defined with the customer.</p></div>
+      <div class="hero-ctas pd-dark-ctas"><a class="btn btn-cyan btn-lg" href="#pd-plans">Explore print plans <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a><a class="btn btn-line-light btn-lg" href="#print-you-can-trust">Print You Can Trust (deeper reading) <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div>
+    </div>
+  </section>
+
+  <section class="pd-sec pd-sec--warm" id="pd-service" aria-labelledby="pd-service-h">
+    <div class="wrap">
+      <p class="pd-eyebrow"><span class="pd-eyebrow-n">5 / 6</span>Service &amp; Support</p>
+      <div class="pd-head"><h2 id="pd-service-h" class="h-display">The relationship shouldn’t end at installation.</h2><p class="pd-intro">Buying the right equipment is the beginning. Keeping it working, supporting users and making adjustments as needs change are what make a print environment dependable.</p></div>
+      <div class="pd-stepgrid"><article class="pd-stepc"><p class="pd-stepc-n">1</p><h3>Plan &amp; deploy</h3><p>Understand the environment, select fit-for-purpose devices and plan installation, workflows and user needs.</p><ul class="pd-tags"><li>Discovery</li><li>Installation</li><li>Adoption</li></ul></article><article class="pd-stepc"><p class="pd-stepc-n">2</p><h3>Support the day-to-day</h3><p>Coordinate technical service, supplies and help when equipment or workflows interrupt people’s work.</p><ul class="pd-tags"><li>Service</li><li>Supplies</li><li>User support</li></ul></article><article class="pd-stepc"><p class="pd-stepc-n">3</p><h3>Review what changes</h3><p>As needs evolve, use available data and customer feedback to revisit fleet fit, cost, policies and improvement opportunities.</p><ul class="pd-tags"><li>Usage</li><li>Planning</li><li>Recommendations</li></ul></article></div>
+      <div class="pd-brandbar"><div><p class="pd-brandbar-t">People who listen. Technology that lasts. Service that stays.</p><p>The exact support and review scope depends on the services and plan selected.</p></div><a class="btn btn-solid btn-lg" href="#contact">Talk to our team <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div>
+    </div>
+  </section>
+
+  <section class="pd-sec" id="pd-plans" aria-labelledby="pd-plans-h">
+    <div class="wrap">
+      <p class="pd-eyebrow"><span class="pd-eyebrow-n">6 / 6</span>Workplace Print Plans</p>
+      <div class="pd-split">
+        <div><p class="pd-new">New from SumnerOne</p><h2 id="pd-plans-h" class="h-display">One print environment. A simpler way to manage it.</h2></div>
+        <p class="pd-intro">Not every organization wants the same level of management. Our three approaches start with how much simplicity, control and accountability you want from your print partner.</p>
+      </div>
+      <div class="pd-plangrid"><article class="pd-planc"><p class="pd-label">1 / Simplicity</p><h3>Core</h3><p class="pd-planc-head">Keep printing simple.</p><p class="pd-planc-desc">A straightforward approach to office equipment, dependable service and supplies, and transparent printing costs.</p><p class="pd-planc-fit">For the customer who wants printing to work and pricing to make sense.</p></article><article class="pd-planc pd-planc--feat"><span class="pd-planc-badge">Our modern workplace direction</span><p class="pd-label">2 / Modern workplace</p><h3>Connected</h3><p class="pd-planc-head">Print for the modern workplace.</p><p class="pd-planc-desc">A more thoughtful print environment designed around today’s IT, management and security needs, beyond a price-per-page discussion.</p><p class="pd-planc-fit">For the customer who expects office printing to operate like modern technology.</p></article><article class="pd-planc"><p class="pd-label">3 / Governance</p><h3>Complete</h3><p class="pd-planc-head">Print managed. Performance visible.</p><p class="pd-planc-desc">Greater visibility into usage, spending, access and security posture, with SumnerOne helping turn the information into decisions and follow-through.</p><p class="pd-planc-fit">For the customer who wants governance and accountability, not just dashboards.</p></article></div>
+      <div class="pd-actions"><a class="btn btn-solid btn-lg" href="#contact">Talk through your options <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a><p>Plan inclusions and comparison details are intentionally deferred in this concept.</p></div>
+    </div>
+  </section>
+
+  <section class="pd-final" aria-labelledby="pd-final-h">
+    <div class="wrap pd-final-in">
+      <div><p class="slash pd-hero-slash">Start the conversation</p><h2 id="pd-final-h" class="h-display">Tell us what you’d like to make simpler.</h2><p>Whether you want one reliable copier or a better-governed print environment across many locations, we’ll start by listening to how your team works.</p></div>
+      <a class="btn btn-cyan btn-lg" href="#contact">Talk to someone who listens first <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+    </div>
+  </section>
+  <script>
+  (function(){
+    var g=document.getElementById('pd-devgrid'); if(!g) return;
+    var btns=document.querySelectorAll('#pd-devices .pd-filter button');
+    btns.forEach(function(b){ b.addEventListener('click',function(){
+      var f=b.dataset.filter;
+      btns.forEach(function(x){x.setAttribute('aria-pressed',x===b?'true':'false');});
+      g.querySelectorAll('.pd-dev').forEach(function(c){c.hidden=!(f==='all'||c.dataset.type===f);});
+    }); });
+  })();
+  </script>
+</main>
+
 <main class="oc-view" id="oc-view" hidden aria-labelledby="oc-h">
   <div class="wrap">
     <header class="oc-hero">
@@ -2646,11 +2911,15 @@ window.S1Chooser=(function(){
 (function(){
   const home=document.getElementById('top');
   const baseTitle=document.title;
+  let meta=document.querySelector('meta[name="description"]');
+  if(!meta){meta=document.createElement('meta');meta.name='description';meta.content='SumnerOne keeps the systems your organization relies on every day running smoothly. Print, mail, production and IT from one partner.';document.head.appendChild(meta);}
+  const baseDesc=meta.getAttribute('content');
   const views=[
     {key:'production-industrial',el:document.getElementById('pi-view'),title:'Production & Industrial Print – SumnerOne'},
     {key:'office-copiers',el:document.getElementById('oc-view'),title:'Office Copiers & All-in-Ones – SumnerOne'},
     {key:'mailing-distribution',el:document.getElementById('md-view'),title:'Mailing & Distribution – SumnerOne'},
-    {key:'technology-cybersecurity',el:document.getElementById('tc-view'),title:'Technology & Cybersecurity – SumnerOne'}
+    {key:'technology-cybersecurity',el:document.getElementById('tc-view'),title:'Technology & Cybersecurity – SumnerOne'},
+    {key:'print-document',el:document.getElementById('pd-view'),title:'Print & Document Solutions | Office Copiers, Managed Print & Secure Print | SumnerOne',desc:'Explore SumnerOne office copiers, managed print services, PaperCut, Canon uniFLOW, secure printing, and support. Find the right approach with Workplace Print Plans.'}
   ].filter(v=>v.el);
   function route(){
     const h=location.hash.slice(1);
@@ -2659,6 +2928,7 @@ window.S1Chooser=(function(){
     home.hidden=!!active;
     views.forEach(v=>{v.el.hidden=v!==active;});
     document.title=active?active.title:baseTitle;
+    if(meta) meta.setAttribute('content',(active&&active.desc)||baseDesc);
     if(active){
       if(h!==active.key&&target) requestAnimationFrame(()=>target.scrollIntoView());
       else window.scrollTo(0,0);
@@ -2724,7 +2994,7 @@ window.S1Chooser=(function(){
         var first=Math.min(n,Math.round(track.scrollLeft/w)+1);
         var shown=Math.max(1,Math.round(track.clientWidth/w));
         var last=Math.min(n,first+shown-1);
-        var u=pc.dataset.unit||'family',us=u==='family'?'families':u+'s';
+        var u=pc.dataset.unit||'family',us=u==='family'?'families':(/s$/.test(u)?u+'es':u+'s');
         status.textContent=(first===last?first:first+'–'+last)+' of '+n+' '+(n===1?u:us);
       }
     }
